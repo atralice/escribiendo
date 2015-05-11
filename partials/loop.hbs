@@ -1,0 +1,52 @@
+{{#foreach posts}}
+	
+
+		<div class="post">
+			<header class="header-post">
+				<span class="meta-post">
+					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+					{{#if tags}}
+					en {{tags separator=", "}}
+					{{/if}}
+				</span>
+				{{#author}}
+					<div class="author-post">
+						{{#if image}}
+							<figure class="avatar">
+								<img src="{{image}}" alt="{{name}}">
+							</figure>
+						{{/if}}
+						<div class="bio">
+							<span>Autor:</span>
+							<span class="author-name">
+								<a href="{{url}}">{{name}}</a>
+							</span>
+						</div>
+
+						
+					</div>
+					{{/author}}
+			</header>
+			<h1 class="post-title">
+		      <a href="{{url}}">
+		        {{{title}}}
+		      </a>
+		    </h1>
+			{{#if image}}
+				<figure class="img-post">
+					<img src="{{image}}" alt="">
+				</figure>
+			{{/if}}
+
+			<section class="post-excerpt">
+				<p>{{excerpt}}&hellip;</p>
+				<p>
+					<a href="{{url}}" class="more">Continuar leyendo <i class="fa fa-angle-right"></i></a>
+				</p>
+			</section>
+		</div>
+
+
+{{/foreach}}
+
+{{pagination}}

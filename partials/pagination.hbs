@@ -1,0 +1,15 @@
+<div class="pagination">
+   <span class="page-number">Página {{page}} de {{pages}}</span>
+  {{#if next}}
+    <a class="pagination-item older" href="{{page_url next}}">Anteriores</a>
+  {{else}}
+    <span class="pagination-item older">Anteriores</span>
+  {{/if}}
+  {{#if prev}}
+    <a class="pagination-item newer" href="{{page_url prev}}">Recientes</a>
+  {{else}}
+    <span class="pagination-item newer">Recientes</span>
+  {{/if}}
+
+
+</div>
