@@ -263,7 +263,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 80rem;
+  max-width: 60rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -429,7 +429,8 @@ Agregado por Toni
  .author-post {
   display: inline-block;
   float:right;
-  text-align:center;}
+  text-align:right;
+  margin-left: 1em;}
 
  .author-post .avatar {
   display: inline-block;
@@ -476,4 +477,8 @@ Agregado por Toni
 .page-number{
   position: relative;
   top: 10px;
+}
+
+#disqus_thread{
+  margin-top: 4rem;
 }

@@ -128,7 +128,6 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48rem) {
   .content {
-    max-width: 80rem;
     margin-left: 20rem;
     margin-right: 4rem;
   }
@@ -136,8 +135,45 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64rem) {
   .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
+    margin-left: 23rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .content {
+    margin-left: 25rem;
+    margin-right: 10rem;
+  }
+}
+
+/* Container Post
+ *
+ */
+
+.contentPost {
+  padding-top:    3rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 48rem) {
+  .contentPost {
+    margin-left: 14rem;
+    margin-right: 30rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .contentPost {
+    margin-left: 15rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .contentPost {
+    margin-left: 25rem;
+    margin-right: 20rem;
   }
 }
 
@@ -247,4 +283,72 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/*
+ * Sidebar Post
+ *
+ * Different Sidebar for reading a Post
+ * 
+ */
+
+.sidebarPost {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+}
+@media (min-width: 48rem) {
+  .sidebarPost {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebarPost a {
+  color: #fff;
+}
+
+/* About section */
+.sidebarPost-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+
+/* Sidebar nav */
+.sidebarPost-nav {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebarPost-nav-item {
+  display: block;
+}
+a.sidebarPost-nav-item:hover,
+a.sidebarPost-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48rem) {
+  .sidebarPost-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
 }
